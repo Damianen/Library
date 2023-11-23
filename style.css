@@ -41,4 +41,31 @@
     padding: 30px;
     border-radius: 20px;
     box-shadow: black 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-card button {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.book-card p, .book-card h1 {
+    align-self: center;
+}
+
+button.read {
+    background-color: #b0ffb0;
+}
+
+button.unread {
+    background-color: #ffb0b0;
+}
+
+button.remove {
+    background-color: #ffffff;
 }
