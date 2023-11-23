@@ -70,3 +70,54 @@ button.unread {
 button.remove {
     background-color: #ffffff;
 }
+
+dialog:not([open]) {
+    display: none;
+}
+
+dialog {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 600px;
+    width: 500px;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input, form button{
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form .submit {
+    background-color: #b0ffb0;
+}
+
+form .cancel {
+    background-color: #ffb0b0;
+}

@@ -1,4 +1,20 @@
 const myLibrary = [];
+const newBookBtn = document.querySelector(".new-book");
+const dialogForm = document.querySelector("dialog");
+const cancelBtn = document.querySelector(".cancel");
+const form = document.querySelector("form");
+
+newBookBtn.addEventListener("click", () => {
+    dialogForm.show();
+});
+
+cancelBtn.addEventListener("click", () => {
+    dialogForm.close();
+});
+
+form.addEventListener("submit", () => {
+    
+});
 
 function Book(title, description, author, pages) {
     this.title = title;
