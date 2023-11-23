@@ -13,7 +13,14 @@ cancelBtn.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", () => {
-    
+    const title = document.getElementById("title");
+    const desc = document.getElementById("description");
+    const author = document.getElementById("author");
+    const pages = document.getElementById("pages");
+
+    addBookToLibrary(new Book(title.value, desc.value, author.value, pages.value));
+
+    form.reset();
 });
 
 function Book(title, description, author, pages) {

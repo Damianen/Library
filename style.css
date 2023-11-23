@@ -4,6 +4,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .nav-bar {
     padding-left: 50px;
     padding-right: 50px;
